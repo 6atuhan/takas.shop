@@ -10,11 +10,12 @@
                 eşyama takas <br><strong class="text-outline-black-thin  text-light tracking-[0.2rem]">teklifleri almak</strong>  <br>istiyorum.
             </h1>
         </div>
-        
     </div>
+    <world-map-comp></world-map-comp>
 </template>
 
 <script setup>
+import WorldMapComp from '../../components/WorldMapComp.vue';
 
 </script>
 
