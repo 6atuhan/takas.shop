@@ -24,6 +24,9 @@
     .text-outline-white-thin{
         text-shadow: 1px 1px 0px #FFFFFF, 1px 0px 0px #FFFFFF, 1px -1px 0px #FFFFFF, 0px -1px 0px #FFFFFF, -1px -1px 0px #FFFFFF, -1px 0px 0px #FFFFFF, -1px 1px 0px #FFFFFF, -1px 1px 0px #FFFFFF;
     }
+    .text-outline-light{
+        text-shadow: 1px 1px 0px #00fc97, 1px 0px 0px #00fc97, 1px -1px 0px #00fc97, 0px -1px 0px #00fc97, -1px -1px 0px #00fc97, -1px 0px 0px #00fc97, -1px 1px 0px #00fc97, -1px 1px 0px #00fc97;
+    }
 
     .button{
         @apply
