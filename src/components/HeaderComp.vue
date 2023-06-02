@@ -5,7 +5,7 @@
             <li class="basis-1/2 px-4 select-none shrink-0 flex items-center justify-evenly gap-2">
                 <p @click="router.push('/')" class=" cursor-pointer drop-shadow-md select-none shrink-0 border-b border-transparent hover:border-dark dark:hover:border-light w-20 text-center hover:text-dark dark:hover:text-light">ana sayfa</p>
                 <p class=" cursor-pointer drop-shadow-md select-none shrink-0 border-b border-transparent hover:border-dark dark:hover:border-light w-20 text-center hover:text-dark dark:hover:text-light">ara</p>
-                <p class="cursor-pointer drop-shadow-md select-none shrink-0 border-b border-transparent hover:border-dark dark:hover:border-light w-20 text-center hover:text-dark dark:hover:text-light">giriş yap</p>
+                <p @click="router.push('/login')" class="cursor-pointer drop-shadow-md select-none shrink-0 border-b border-transparent hover:border-dark dark:hover:border-light w-20 text-center hover:text-dark dark:hover:text-light">giriş yap</p>
             </li>
             <li class="basis-full  border-t border-dark flex items-center flex-wrap justify-evenly bg-white">
                 <button @click="router.push('/posts/electronic')" class="bg-white hover:bg-gradient-to-t  from-light via-transparent  to-transparent  px-3 py-1 hover:text-light text-dark text-outline-white-thin hover:text-outline-black-thin w-full basis-1/5 transition-all">elektronik</button>

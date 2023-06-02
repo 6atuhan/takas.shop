@@ -28,7 +28,7 @@ const post = reactive({
     name:"WWWWWWWWWW",   //10char
     surname:"WWWWWWWWWW",   //10char
     city:"WWWWWWWWWWWWWww", //15char
-    plate:81, //2char
+    plate:45, //2char
     note:"WWWWWWWWWWWWWWWWWWWWWWWWWWWWW", //30char
     new:true,
     work:true,

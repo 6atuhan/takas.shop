@@ -1,8 +1,9 @@
-import { createRouter, createWebHashHistory} from "vue-router";                 
+import { createRouter, createWebHashHistory} from "vue-router";    
+import HomePage from "/src/router/views/HomePage.vue"             
 const routes=[ {                                                               
         path:'/',                                                              
         name:'Home',                                                           
-        component: ()=> import ("/src/router/views/HomePage.vue")                    
+        component:HomePage,        
     },
     {                                                               
         path:'/deneme',                                                              
@@ -13,6 +14,12 @@ const routes=[ {
         path:'/posts/:type',                                                              
         name:'Posts',                                                           
         component: ()=> import ("/src/router/views/PostsPage.vue")                    
+    }
+    ,
+    {                                                               
+        path:'/login',                                                              
+        name:'Login',                                                           
+        component: ()=> import ("/src/router/views/LoginPage.vue")                    
     }]                                                                         
 const router =createRouter({                                                   
     history:createWebHashHistory(),                                            

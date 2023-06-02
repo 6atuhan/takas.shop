@@ -9,7 +9,7 @@
                 <electronics-svg-comp v-if="post.type=='electronics'" :size="24"></electronics-svg-comp>
                 <clothes-svg-comp v-if="post.type=='clothes'" :size="24"></clothes-svg-comp>
                 <toys-svg-comp v-if="post.type=='toys'" :size="24"></toys-svg-comp>
-                <p> ~ {{ props.post.age }} year</p>
+                <p> ~ {{ props.post.age }} yıllık</p>
                 <p> ~ {{ formatNumber(props.post.value) }} TL</p>
             </div>
             <!-- photos area -->
@@ -28,9 +28,9 @@
                     </div>
                 </li>
                 <li class="font-bold">{{ props.post.name }} {{ props.post.surname[0] }}.</li>
-                <li class="ml-auto relative group font-bold select-none cursor-pointer border border-dark rounded-full w-8 h-8 text-center leading-7">{{ props.post.plate }}
+                <li class="ml-auto relative group font-bold text-light text-outline-black-thin select-none cursor-pointer border border-dark rounded-full w-8 h-8 text-center  leading-7">{{ props.post.plate<10 ? '0'+props.post.plate:props.post.plate }}
                 <!-- city plate tooltip -->
-                    <div class="px-2 h-8 bg-white absolute invisible -top-8 -left-8 group-hover:visible border border-dark bg-inherit">{{ props.post.city }}</div>
+                    <div class="px-2 h-8 bg-white absolute invisible z-[9999] -top-8 -right-8 group-hover:visible border border-dark bg-inherit">{{ props.post.city }}</div>
                 </li>
             </ul>
             <!-- product note --> 
